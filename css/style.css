@@ -493,6 +493,15 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
 .footer-icon{
   fill: #FFFFFF;
 }
+.footer-label{
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+}
 .soc>h3{
   font-style: normal;
   font-weight: 700;
@@ -659,6 +668,37 @@ align-items: center;
 .modal-icon{
   fill: #000000;
  
+}
+.modal-form{
+  padding: 40px;
+}
+.modal-title{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: #212121;
+}
+textarea{
+  resize: none;
+}
+
+.form-button {
+  min-width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+   
+  color: #FFFFFF;
 }
 
 .is-hidden {
