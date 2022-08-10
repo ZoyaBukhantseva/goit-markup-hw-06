@@ -729,15 +729,16 @@ fill: #2196F3;
 
 .modal-title{
   margin-bottom: 30px;
+
   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
   
-    color: #212121;
+  color: #212121;
 }
 .modal-field{
 margin-bottom: 28px;
@@ -749,12 +750,18 @@ top: 11px;
 left: 12px;
 fill: #212121;}
 
-.modal-field:focus.form-icon {
+.modal-input:focus ~.form-icon {
   fill: #2196F3;
 }
 .modal-label{
   display: block;
   margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  
+  color: #757575;
 }
 .modal-text{
 width: 100%;
@@ -788,6 +795,10 @@ textarea::placeholder{
   line-height: 1.88;
    
   color: #FFFFFF;
+}
+.checkbox{
+  appearance: none;
+  position: absolute;
 }
 
 .is-hidden {
