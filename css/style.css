@@ -28,7 +28,7 @@ padding: 0;}
 img {display: block;
   min-width: 100%;
   height: auto;}
-  
+  /*---------------HEADER----------------- */
 .logo {
   color: var(--acent-color);
   font-family: Raleway;
@@ -139,7 +139,7 @@ align-items: center;}
   padding-left: 15px;
   padding-right: 15px;
  }
-
+/* ---------------------HERO----------------------------- */
 .hero{
    background-color:var(--bgr-color-acent);
    padding-top: 200px;
@@ -190,6 +190,7 @@ align-items: center;}
   cursor: pointer;
 
 }
+/* ---------------------SECTION PECULIARITIES------------------------ */
 .peculiarities-list{
   display: flex;
   gap: 30px;
@@ -248,7 +249,7 @@ background-image: url(../images/antenna.svg);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-
+/* -------------------------SECTION ABOUT------------------------------ */
 .about-tittle,
 .team-tittle,.clients-tittle {
   margin-bottom: 50px;
@@ -297,7 +298,7 @@ background-image: url(../images/antenna.svg);
   background-color:rgba(47, 48, 58, 0.8);
 
 }
-
+/* ---------------------SECTION TEAM----------------------- */
 .team{
   background-color: var(--bgr-second-color);
   padding-top: 94px;
@@ -385,6 +386,8 @@ background-image: url(../images/antenna.svg);
   fill: #fff;
  
 }
+
+/* ---------------SECTION CLIENTS --------------------------- */
 .clients{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -419,7 +422,7 @@ background-image: url(../images/antenna.svg);
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-
+/* -------------------------------FOOTER--------------------------- */
 .footer {
   background-color: var(--bgr-color-acent);
   padding-top: 60px;
@@ -493,26 +496,31 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
 .footer-icon{
   fill: #FFFFFF;
 }
+.footer-form{
+  width: 100%;
+}
 .footer-label{
-  display: block;
   margin-bottom: 20px;
+  width: 100%;
   font-weight: 700;
-    font-size: 14px;
+ font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   
     color: #FFFFFF;
 }
+
 .footer-input{
   width: 358px;
   height: 50px;
  padding: 15px 16px;
  margin-right: 12px;
- background-color: transparent;
+ background-color: #2F303A;;
  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input::placeholder{
   font-family: 'Roboto';
@@ -523,7 +531,19 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
     letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-input:focus{
+  border-color: #fff;
+  outline: transparent;
+ 
+}
+
+.footer-form{
+  display: flex;
+}
 .footer-button{
+ display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   background: #2196F3;
@@ -531,14 +551,20 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
   border: transparent;
   border-radius: 4px;
 
-  font-weight: 700;
+   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
+  line-height:1.88;
+ 
   letter-spacing: 0.06em;
-  
+
   color: #FFFFFF;
 }
+
+.btn-icon{
+margin-left:  10px;
+
+}
+
 .soc>h3{
   font-style: normal;
   font-weight: 700;
@@ -553,6 +579,8 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]:hover{
 .soc{
   margin-right: 93px;
 }
+
+/* --------------------SECTION PORTFOLIO-------------------------- */
 .box-contacts{
 display: flex;
 }
@@ -600,7 +628,7 @@ display: flex;
   background-color: var(--acent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-
+/* ----------------------------------SECTOIN GALLERY------------------------ */
 .text-container p {
    font-style: normal;
   font-weight: 400;
@@ -667,6 +695,7 @@ border-right:1px solid #EEEEEE ;
 border-left: 1px solid #EEEEEE ;
 padding: 20px 24px;
 }
+/* ------------------------------MODAL---------------------------------------------------------------- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -674,7 +703,8 @@ padding: 20px 24px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal{
 transform: translate(-50%,-50%) rotate(180deg) ;
@@ -692,6 +722,7 @@ border-radius: 4px;
 transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) ;
 padding: 40px;
 }
+
 .modal-clouse{
   position: absolute;
   top: 8px;
@@ -704,26 +735,27 @@ padding: 40px;
  border: 1px solid rgba(0, 0, 0, 0.1);
 cursor: pointer;
 align-items: center;
+
 }
 .modal-clouse:hover .modal-icon{
 fill: #2196F3;
 }
 .modal-icon{
   fill: #000000;
- 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-input{
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  
   padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus{
   cursor: pointer;
-  outline: none;
+  outline: transparent;
   border-color:#2196F3; 
 }
 
@@ -742,13 +774,17 @@ fill: #2196F3;
 }
 .modal-field{
 margin-bottom: 28px;
-position: relative;
+
+}
+.input-wrap{
+  position: relative;
 }
 .form-icon{
 position: absolute;
 top: 11px;
 left: 12px;
-fill: #212121;}
+fill: #212121;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .modal-input:focus ~.form-icon {
   fill: #2196F3;
@@ -770,7 +806,8 @@ padding: 16px 12px;
 resize: none;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 textarea::placeholder{
   font-family: 'Roboto';
@@ -782,7 +819,14 @@ textarea::placeholder{
 
   color: rgba(117, 117, 117, 0.5);
  }
+.modal-text:focus{
+  cursor: pointer;
+  outline: transparent;
+  border-color: #2196F3;
+  }
+
 .form-button {
+display: block;
   min-width: 200px;
   height: 50px;
   margin-top: 40px;
@@ -793,14 +837,62 @@ textarea::placeholder{
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-   
+   border: transparent;
   color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
 }
-.checkbox{
-  appearance: none;
+/* .forn-field{
+  width: 100%;
+} */
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+    }
+
+
+.chek-text{
+position: relative;
+
+}
+.chek-icon-cheked{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--acent-color);
+  border: transparent;
+  border-radius: 2px;
+  opacity: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.checkbox:checked +.chek-text .chek-icon-cheked {
+  opacity: 1;
+}
+.checkbox:checked+.chek-text .chek-icon {
+  opacity: 0;
+}
+.checkbox:focus+.chek-text .chek-icon{
+  fill: #2196F3;
 }
 
+.chek-icon{
+fill :#212121;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-link{
+color: var(--acent-color);
+}
 .is-hidden {
   visibility:hidden;
   opacity :0;
