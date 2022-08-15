@@ -871,15 +871,15 @@ justify-content: center;
 align-items: center;
 font-weight: 400;
 font-size: 14px;
-line-height: 1.71px;
+line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: #757575;
 }
 .chek-icon-cheked{
   position: absolute;
-  top: 0;
-  left: 20px;
+  top: 4px;
+  left: 18px;
   background-color: var(--acent-color);
   border: transparent;
   border-radius: 2px;
@@ -904,6 +904,7 @@ margin-right: 10px;
 
 .modal-link{
 color: var(--acent-color);
+margin-left: 5px;
 }
 .is-hidden {
   visibility:hidden;
